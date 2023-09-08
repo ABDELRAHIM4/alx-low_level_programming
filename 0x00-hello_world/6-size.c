@@ -1,4 +1,4 @@
-#include<sidio.h>
+#include<stdio.h>
 int main (void)
 {
 	printf("size of a char: %d byte(s)\n",sizeof(char));
