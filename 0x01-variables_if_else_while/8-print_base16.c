@@ -1,14 +1,22 @@
 #include <stdio.h>
-int main(void){
-        int i;
-        for (i = 48; i< 58; i++)
-        {
-                putchar(i);
-        }
-        for(i= 97; i <103; i++)
-        {
-                putchar(i);
-        }
-        putchar('\n');
-        return (0);
+
+/**
+ * main- Entry point
+ * @void: Null value
+ *
+ * Description: Print numbers of base 16
+ * Return: Zero value
+ */
+
+int main(void)
+{
+	char c;
+	int n;
+
+	for (n = '0'; n <= '9'; n++)
+		putchar(n);
+	for (c = 'a'; c <= 'f'; c++)
+		putchar(c);
+	putchar('\n');
+	return (0);
 }
