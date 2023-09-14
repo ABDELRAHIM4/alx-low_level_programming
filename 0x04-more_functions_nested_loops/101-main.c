@@ -1,21 +1,28 @@
 #include "main.h"
+#include <limits.h>
 
 /**
- * main - check the code
+ * main - check the code for Holberton School students.
  *
  * Return: Always 0.
  */
 int main(void)
 {
 	print_number(98);
-	putchar('\n');
+	_putchar('\n');
 	print_number(402);
-	putchar('\n');
+	_putchar('\n');
 	print_number(1024);
-	putchar('\n');
+	_putchar('\n');
 	print_number(0);
-	putchar('\n');
+	_putchar('\n');
 	print_number(-98);
-	putchar('\n');
+	_putchar('\n');
+	print_number(-1);
+	_putchar('\n');
+       print_number(INT_MAX);
+       _putchar('\n');
+       print_number(INT_MIN);
+       _putchar('\n');
 	return (0);
 }
