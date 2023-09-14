@@ -20,3 +20,35 @@ int isprime(long n)
 	}
 	return (1);
 }
+
+
+/**
+ * largest_prime_factor - find the largest prime_factor of an integer.
+ * @n: integer to factor
+ *
+ * Return: largest prime factor of n.
+ */
+long largest_prime_factor(long n)
+{
+	long i = 2;
+
+	while (!isprime(n))
+	{
+		while (n % i || !isprime(i))
+			++i;
+		n /= i;
+	}
+	return (n);
+}
+
+
+/**
+ * main - find and print the largest prime factor of 612852475143
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+	printf("%ld\n", largest_prime_factor(612852475143));
+	return (0);
+}
