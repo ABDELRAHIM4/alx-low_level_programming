@@ -7,7 +7,7 @@
  *     *     *
  *      *      * Return: On success 1.
  *       *       * On error, -1 is returned, and errno is set appropriately.
- *       */
+*/
 int palind2(char *a, int l)
 {
 	if (*a == 0)
@@ -20,8 +20,8 @@ int palind2(char *a, int l)
  *    *    * @l: length
  *     *     *
  *      *      * Return: On success 1.
- *       *       * On error, -1 is returned, and errno is set appropriately.
- *       */
+ *       *       * On error, -1 is returned, and errno is set appropriately
+*/
 
 int palind3(char *a, int l)
 {
@@ -37,7 +37,7 @@ int palind3(char *a, int l)
  *    *    *
  *     *     * Return: On success 1.
  *      *      * On error, -1 is returned, and errno is set appropriately.
- *      */
+*/
 int is_palindrome(char *s)
 {
 	int l;
