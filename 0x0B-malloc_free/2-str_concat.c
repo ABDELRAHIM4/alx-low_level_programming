@@ -18,23 +18,23 @@ s1 = "";
 if (s2 == NULL)
 s2 = "";
 else
-{
+
 for (i = 0; s1[i] || s2[i]; i++)
-{
+
 l++;
-}
+
 p = malloc(l *sizeof(char));
 if (p == NULL)
 return (NULL);
 for (i = 0; s1[i]; i++)
-{
+
 p[x++] = s1[i];
-}
+
 for (i = 0; s2[i]; i++)
-{
+
 p[x++] = s2[i];
-}
-}
+
+
 return (p);
 
 }
