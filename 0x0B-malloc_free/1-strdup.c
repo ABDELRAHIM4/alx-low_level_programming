@@ -20,7 +20,10 @@ i++;
 p = malloc((i + 1) * sizeof(char));
 if (p == NULL)
 return (NULL);
+for (l = 0; str[l]; l++)
+{
 p[l] = str[l];
+}
 p[i] = '\0';
 return (p);
 }
