@@ -34,7 +34,7 @@ for (i = 0; s2[i]; i++)
 {
 p[x++] = s2[i];
 }
-return (p);
 }
-return (0);
+return (p);
+
 }
