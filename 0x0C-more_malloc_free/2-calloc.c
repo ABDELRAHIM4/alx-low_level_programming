@@ -14,7 +14,7 @@ char *p;
 unsigned int i;
 if (nmemb == 0 || size == 0)
 return (NULL);
-p = malloc(size * sizeof(nmemb));
+p = malloc(size * nmemb);
 if (p == 0)
 return (NULL);
 for (i = 0; i < (nmemb * size); i++)
