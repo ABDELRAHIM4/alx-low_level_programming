@@ -9,27 +9,23 @@
  *         *
  *           * Return: ...
 */
-
-
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 unsigned int x;
-if (separator != NULL)
-{
 va_list(p);
 va_start(p, n);
 for (x = 0; x < n; x++)
 {
 vprintf("%d", p);
-if (x + 1 != n)
+if (x + 1 != n && separator != NULL)
 {
-printf(", ");
+printf("%s ",separator);
 }
 else
 {
+printf(" ");
+}
+}
 printf("\n");
-}
-}
 va_end(p);
-}
 }
