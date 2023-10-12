@@ -11,19 +11,15 @@
 */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-unsigned int x;
 va_list(p);
+unsigned int x;
 va_start(p, n);
 for (x = 0; x < n; x++)
 {
-vprintf("%d", p);
-if (x + 1 != n && separator != NULL)
+printf("%d", va_arg(p, int));
+if (x != n - 1 && separator != NULL)
 {
 printf("%s", separator);
-}
-else
-{
-printf(" ");
 }
 }
 printf("\n");
