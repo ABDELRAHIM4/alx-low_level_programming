@@ -19,7 +19,7 @@ for (x = 0; x < n; x++)
 vprintf("%d", p);
 if (x + 1 != n && separator != NULL)
 {
-printf("%s ",separator);
+printf("%s", separator);
 }
 else
 {
