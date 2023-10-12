@@ -23,7 +23,7 @@ for (x = 0; x < n; x++)
 vprintf("%d", p);
 if (x + 1 != n)
 {
-printf(",");
+printf(", ");
 }
 else
 {
