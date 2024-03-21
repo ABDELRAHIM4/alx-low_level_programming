@@ -5,6 +5,7 @@ def island_perimeter(grid):
     rows = len(grid)
     cols = len(grid[0])
     perimeter = 0
+    """iterate through each cell """
     for i in range(rows):
         """iterate through each cell """
         for j in range(cols):
