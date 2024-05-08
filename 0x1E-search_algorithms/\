@@ -1,0 +1,29 @@
+#include "search_algos.h"
+
+int binary_search(int *array, size_t size, int value)
+{
+	if (array == NULL || size == 0)
+	{
+		return (-1);
+	}
+	int mid, high, low;
+	high = array[size -1];
+	low = array[0];
+	while ( low <= hight)
+	{
+	mid = (low +  high) / 2
+	if value == array[mid]
+	{
+		return value;
+	}
+	else if (value < araay[mid])
+	{
+		high = mid - 1;
+	}
+	else 
+	{
+		low = mid + 1;
+	}
+	}
+	return (-1);
+}
